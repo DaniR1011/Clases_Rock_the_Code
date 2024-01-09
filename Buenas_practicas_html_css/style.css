@@ -1,0 +1,96 @@
+/* Cambio de fuente */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,600;1,400;1,500;1,700&display=swap');
+
+/* Reseteo de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Paleta de estilos */
+:root {
+  --primary: black;
+  --secondary: green;
+  --margin: 50px;
+  --padding: 100px;
+}
+
+/* Estilos para el header */
+header {
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary);
+}
+
+header > nav {
+  display: flex;
+  gap: 50px;
+}
+
+header > nav > ul {
+  display: flex;
+  gap: 20px;
+}
+
+header > nav > ul > li > a {
+  color: var(--primary);
+}
+
+header > nav > div {
+  display: flex;
+  gap: 20px;
+}
+
+#pikachu {
+  width: 100px;
+  display: none;
+}
+
+button {
+  background-color: red;
+}
+
+/* Estilos para el main */
+main {
+  min-height: 84vh;
+}
+
+main > h1,
+h2,
+h3 {
+  color: green;
+}
+
+h1 {
+  font-family: 'Roboto Condensed';
+  font-weight: 600;
+}
+
+#navega {
+  background-color: gray;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Estilos para el footer */
+footer {
+  height: 8vh;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+}
+
+/* Estilos para el responsive */
+@media (max-width: 600px) {
+  header > nav > ul {
+    display: none;
+  }
+  #pikachu {
+    display: block;
+  }
+}
