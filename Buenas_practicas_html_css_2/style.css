@@ -1,0 +1,125 @@
+/* Cambio de fuente */
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;900&display=swap');
+
+/* Reseteo de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Estilos globales */
+:root {
+  --primary: black;
+  --secondary: red;
+  --thirdly: blue;
+  --margin: 100px;
+}
+
+/* Estilos para el html */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilos generales de la web */
+button {
+  font-size: 1.4rem;
+  background: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-family: 'Tektur', sans-serif;
+}
+
+button:hover {
+  color: var(--secondary);
+}
+
+/* Estilos del header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 10vh;
+}
+
+header > nav > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+header > nav > ul > li > a {
+  color: var(--primary);
+}
+
+.hamburguesa {
+  width: 50px;
+  display: none;
+}
+
+.css {
+  width: 100px;
+}
+
+/* Estilos del main */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+main > section {
+  margin-top: var(--margin);
+}
+
+main > section > h1 {
+  color: var(--primary);
+}
+
+main > section > h4 {
+  color: var(--secondary);
+}
+
+main > section > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+main > section > ul > li > img {
+  width: 400px;
+}
+
+.click {
+  font-family: 'Courier New', Courier, monospace;
+  border: 5px solid var(--thirdly);
+}
+
+.python {
+  width: 100px;
+}
+
+/* Estilos para el footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+/* Estilos para la media query */
+@media (max-width: 650px) {
+  header > nav > ul {
+    display: none;
+  }
+  .hamburguesa {
+    display: block;
+  }
+}
