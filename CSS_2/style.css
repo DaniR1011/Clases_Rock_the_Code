@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales de nuestros botones */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#btnChangeTheme {
+  top: 0;
+  right: 0;
+  position: fixed;
+  margin: 30px;
+}
+
+header {
+  border: 5px solid blue;
+  /* height: 10vh; */
+  text-align: center;
+  top: 0;
+  position: fixed;
+  width: 100%;
+}
+
+main {
+  border: 5px solid green;
+  text-align: center;
+}
+
+section {
+  margin-top: 100px;
+}
+
+/* Con este id maquetamos específicamente este H3 */
+#containerTitle {
+  color: blue;
+  letter-spacing: 0.6px;
+}
+
+.firstInput {
+  margin-top: 10px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.firstInput:hover {
+  background-color: red;
+  font-size: 1.2rem;
+  transition: ease-in-out 0.5s;
+}
+
+section > article > h3 {
+  color: red;
+}
+
+.firstTitle {
+  color: green;
+}
+
+/* Estilos para el footer */
+footer {
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  position: relative;
+}
+
+/* Unidades de medida 
+px -> Unidades de medida más utilizadas, no suele permitir responsive.
+% -> Medida bastante común, favorece el uso de responsive.
+rem -> 1 rem = 16px
+em -> 1em = 16px
+*/

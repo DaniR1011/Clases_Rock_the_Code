@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #ff0000;
+  --secondary: #0000ff;
+  --spacingMargin: 120px;
+}
+
+header {
+  border: 5px solid var(--primary);
+  height: 12vh;
+  text-align: center;
+  width: 100%;
+  background-color: bisque;
+  position: fixed;
+}
+
+main {
+  border: 5px solid var(--secondary);
+  border-radius: 5px;
+  text-align: center;
+  min-height: 88vh;
+}
+
+footer {
+  border: 5px solid yellow;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  height: 4vh;
+  background-color: aquamarine;
+  position: fixed;
+}
+footer > p {
+  color: blue;
+  width: 100%;
+  text-align: center;
+}
+
+section {
+  margin-top: var(--spacingMargin);
+}
+section > article > h3 {
+  color: blue;
+}
+
+#firstTitle {
+  color: red;
+}
+
+.buttonChangeTheme {
+  background: none;
+  border: 2px solid black;
+  cursor: pointer;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  margin: 2rem;
+}
+
+section > input {
+  border-radius: 10px;
+  border: 3px solid black;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.buttonContainer {
+  margin-top: 5px;
+  background: none;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.buttonContainer:hover {
+  background-color: green;
+  color: red;
+  font-size: 1rem;
+  transition: ease-in-out 0.4s;
+}
+
+/* Unidades de medida
+px -> Maquetación pero no suele permitir responsive
+% -> Suele ser lo más común para el responsive
+rem -> 1 rem = 16px
+em -> Hace referencia al elemento padre
+*/

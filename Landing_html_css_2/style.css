@@ -1,0 +1,156 @@
+/* Cambio de fuente */
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Open+Sans:wght@300;500;800&display=swap');
+
+/* Agrupación de estilos */
+:root {
+  --primary: green;
+  --margin-bottom: 700px;
+}
+
+/* Reseteo de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Estilos para el header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 10vh;
+  background-color: antiquewhite;
+}
+
+header > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+header > nav > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+header > nav > ul > li > a {
+  color: black;
+}
+.logo {
+  width: 150px;
+}
+
+.hamburguesa {
+  width: 50px;
+  display: none;
+}
+
+/* Estilos para el main */
+main {
+  min-height: 80vh;
+}
+
+/* Primer section */
+#info {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  margin-top: 50px;
+}
+.zapatillas {
+  width: 500px;
+  height: 750px;
+}
+
+#info > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#info > div > h1 {
+  margin-bottom: 30px;
+  color: blue;
+  font-size: 2rem;
+}
+
+#info > div > h4 {
+  margin-bottom: 20px;
+}
+
+#info > div > p {
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+.buttonInfo {
+  font-size: 2rem;
+  background: none;
+  border: 2px solid black;
+  border-radius: 1rem;
+  width: 500px;
+  cursor: pointer;
+  color: var(--primary);
+}
+
+/* Segundo section */
+#productos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+#productos > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#productos > ul > li > img {
+  width: 200px;
+}
+
+.flecha {
+  width: 50px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Estilos para el footer */
+footer {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  background-color: antiquewhite;
+}
+
+/* Estilos para la media query */
+@media (max-width: 600px) {
+  header > nav > ul {
+    display: none;
+  }
+  .hamburguesa {
+    display: block;
+  }
+}

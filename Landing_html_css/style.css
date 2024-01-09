@@ -1,0 +1,162 @@
+/* Reseteo de estilos  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Maquetación del header */
+header {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: bisque;
+}
+
+header > div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+header > nav > ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0px 20px;
+}
+
+header > nav > ul > li > a {
+  color: black;
+}
+.logo {
+  width: 150px;
+}
+
+.hamburguesa {
+  width: 50px;
+  display: none;
+}
+
+/* Maquetación del main */
+main {
+  min-height: 80vh;
+}
+
+/* Primer Section */
+.zapatillas {
+  width: 500px;
+  height: 700px;
+}
+
+#firstSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+section > article {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+section > article > h2 {
+  margin-bottom: 100px;
+  font-weight: 600;
+}
+
+section > article > p {
+  margin-bottom: 50px;
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+section > article > p > span {
+  font-weight: 600;
+}
+
+.buttonSede {
+  font-size: 1.4rem;
+  background: none;
+  border: 2px solid black;
+  border-radius: 1rem;
+  width: 300px;
+  cursor: pointer;
+}
+
+/* Segundo section */
+#zapatillasContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  padding: 10px;
+}
+
+#zapatillasContainer > h3 {
+  margin-bottom: 50px;
+}
+
+#zapatillasContainer > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+#zapatillasContainer > ul > li > img {
+  width: 500px;
+}
+
+#zapatillasContainer > ul > li > input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.flecha {
+  width: 50px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  padding: 10px;
+}
+
+/* Estilos para el footer */
+footer {
+  height: 10vh;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+  position: relative;
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  #header > nav > ul {
+    display: none;
+  }
+  .hamburguesa {
+    display: block;
+  }
+}
