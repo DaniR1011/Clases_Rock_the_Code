@@ -27,3 +27,12 @@ div {
 .ease-in-out {
   animation-timing-function: ease-in-out;
 }
+
+@keyframes mymove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 600px;
+  }
+}
