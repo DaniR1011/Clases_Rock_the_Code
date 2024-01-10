@@ -1,0 +1,26 @@
+:root {
+  overflow: hidden;
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+}
+
+.sol {
+  background-color: yellow;
+  border-radius: 50%;
+  height: 100vh;
+  aspect-ratio: 1 / 1;
+  animation: 10s linear 0s infinite alternate desplazamiento;
+}
+
+@keyframes desplazamiento {
+  from {
+    transform: translateY(110vh);
+    background-color: darkred;
+    filter: brightness(75%);
+  }
+  to {
+    transform: translateY(0);
+    background-color: orange;
+  }
+}

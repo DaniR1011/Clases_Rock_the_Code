@@ -1,0 +1,29 @@
+div {
+  width: 200px;
+  height: 150px;
+  background-color: coral;
+  position: relative;
+  font-weight: bold;
+  animation: mymove 5s;
+  animation-fill-mode: forwards;
+}
+
+.linear {
+  animation-timing-function: linear;
+}
+
+.ease {
+  animation-timing-function: ease;
+}
+
+.ease-in {
+  animation-timing-function: ease-in;
+}
+
+.ease-out {
+  animation-timing-function: ease-out;
+}
+
+.ease-in-out {
+  animation-timing-function: ease-in-out;
+}

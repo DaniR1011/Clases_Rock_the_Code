@@ -1,0 +1,19 @@
+.boton {
+  background: none;
+  font-size: 1.4rem;
+  border: none;
+}
+
+h1:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.boton:hover {
+  border: 5px solid green;
+  cursor: pointer;
+  font-size: 2rem;
+  transition: transform 0.8 ease;
+  opacity: 0.5;
+  background-color: coral;
+}

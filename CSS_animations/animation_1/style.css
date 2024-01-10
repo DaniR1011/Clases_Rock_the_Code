@@ -1,0 +1,25 @@
+div {
+  width: 150px;
+  height: 100px;
+  background-color: aquamarine;
+  animation-name: fondo;
+  animation-duration: 7s;
+}
+
+@keyframes fondo {
+  0% {
+    background-color: aquamarine;
+  }
+  25% {
+    background-color: chocolate;
+  }
+  50% {
+    background-color: darkred;
+  }
+  75% {
+    background-color: chartreuse;
+  }
+  100% {
+    background-color: aquamarine;
+  }
+}
