@@ -1,0 +1,26 @@
+:root {
+  overflow: hidden;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+}
+
+.sol {
+  background-color: yellow;
+  border-radius: 50%;
+  height: 100vh;
+  aspect-ratio: 1 / 1;
+  animation: 6s linear 0s infinite alternate amanecer;
+}
+
+@keyframes amanecer {
+  from {
+    background-color: brown;
+    transform: translateY(110vh);
+    filter: brightness(60%);
+  }
+  to {
+    background-color: yellow;
+    transform: translateY(0);
+  }
+}

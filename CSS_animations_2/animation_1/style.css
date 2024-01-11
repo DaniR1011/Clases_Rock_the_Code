@@ -1,0 +1,25 @@
+div {
+  width: 300px;
+  height: 200px;
+  background-color: gold;
+  animation-name: backgroundChange;
+  animation-duration: 5s;
+}
+
+@keyframes backgroundChange {
+  0% {
+    background-color: gold;
+  }
+  25% {
+    background-color: coral;
+  }
+  50% {
+    background-color: aquamarine;
+  }
+  75% {
+    background-color: darkblue;
+  }
+  100% {
+    background-color: gold;
+  }
+}

@@ -1,0 +1,34 @@
+div {
+  width: 300px;
+  height: 100px;
+  background-color: bisque;
+  position: relative;
+  animation-name: movementDiv;
+  animation-duration: 4s;
+}
+
+@keyframes movementDiv {
+  0% {
+    background-color: bisque;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: 400px;
+    top: 0px;
+  }
+  50% {
+    background-color: crimson;
+    left: 400px;
+    top: 800px;
+  }
+  75% {
+    left: 0px;
+    top: 500px;
+  }
+  100% {
+    background-color: black;
+    left: 0px;
+    top: 0px;
+  }
+}

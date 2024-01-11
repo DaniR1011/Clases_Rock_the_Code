@@ -1,0 +1,38 @@
+div {
+  width: 300px;
+  height: 200px;
+  background-color: bisque;
+  position: relative;
+  animation-duration: 6s;
+  animation-name: move;
+  animation-fill-mode: forwards;
+}
+
+.linear {
+  animation-timing-function: linear;
+}
+
+.ease {
+  animation-timing-function: ease;
+}
+
+.ease-in {
+  animation-timing-function: ease-in;
+}
+
+.ease-out {
+  animation-timing-function: ease-out;
+}
+
+.ease-in-out {
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes move {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 600px;
+  }
+}
