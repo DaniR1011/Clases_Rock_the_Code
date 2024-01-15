@@ -1,0 +1,128 @@
+/* Explicación Flex */
+/* Flex -> Nos permite posicionar elementos alrededor de la página */
+/* 1.- Flex-direction -> Posicionamos los elementos en el eje vertical y horizontal.
+1.1.- Flex-direction: column -> Posiciona los elementos en el eje vertical. 
+1.2.- Flex-direction: column-reverse -> Posiciona los elementos en el eje vertical de manera alterna.
+1.3.- Flex-direction: row -> Valor predeterminado, posiciona los elementos en el eje horizontal.
+1.4.- Flex-direction: row-reverse -> Posiciona los elementos en el eje horizontal de manera alterna.
+
+2.- Flex-wrap -> Envuelve el contenido y lo posiciona uno debajo de otro.
+2.1.- Flex-wrap: nowrap -> Permite que los elementos no caigan uno debajo de otro, pero no se deforman.
+2.2.- Flex-wrap: wrap -> Estilo por defecto, nos permite distribuir los elementos en función del tamaño de la pantalla.
+2.3.- Flex-wrap: wrap-reverse -> Nos permite envolver los elementos según el tamaño de la pantalla, de manera alterna.
+
+3.- Flex-grow -> Permite estirar el elemento específico que nosotros decidamos. La unidad de medida varía desde 0 hasta 2.
+
+4.- Flex-shrink -> Permite acortar el elemento específico que nosotros decidamos. La unidad de medida varía desde 0 a 2.
+
+5.- Flex-basis -> Permite definir el tamaño del elemento específico que decidamos. La unidad de medida serían px.
+
+6.- Flex-flow -> Nos permite posicionar los elementos en el eje vertical y horizontal (nos sirve a modo de referencia).
+
+Posicionamientos ->
+1.- Justify-content: center -> Sirve para posicionar los elementos en el centro del eje horizontal.
+1.1.- Justify-content: end -> Sirve para posicionar los elementos al final del eje horizontal.
+1.2.- Justify-content: space-around -> Nos posiciona los elementos a lo largo del ancho, respecto del eje horizontal. Genera márgenes automáticos.
+1.3.- Justify-content: space-between -> Nos posiciona los elementos a lo largo del ancho, respecto del eje horizontal. No genera los márgenes como el space-around.
+
+2.- Align-items: center -> Sirve para posicionar los elementos en el centro del eje vertical.
+2.1 Align-items: flex-end -> Posiciona los elementos al final del eje vertical.
+2.2 Align-items: flex-start -> Posiciona los elementos al inicio del eje vertical.
+2.3 Align-items: stretch -> Posiciona los elementos ocupando toda la altura del contenedor.
+*/
+
+/* Estilos los globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Estilos del header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  height: 10vh;
+}
+
+header > nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+header > nav > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+header > nav > ul > li > a {
+  color: black;
+}
+
+header > nav > ul > li > a:hover {
+  color: green;
+}
+
+.mongo {
+  width: 150px;
+}
+
+.python {
+  display: none;
+}
+
+/* Estilos del main */
+main {
+  min-height: 80vh;
+}
+
+main > section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+main > section > div {
+  width: 300px;
+  height: 150px;
+  background-color: burlywood;
+}
+
+/* Estilos del footer */
+footer {
+  height: 10vh;
+  bottom: 0;
+  position: relative;
+}
+
+footer > section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+footer > section > article {
+  text-align: justify;
+  width: 70%;
+}
+
+/* Estilos para la media query */
+@media (max-width: 750px) {
+  .mongo {
+    display: none;
+  }
+  .python {
+    display: block;
+  }
+}
