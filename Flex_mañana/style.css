@@ -1,0 +1,109 @@
+/* Explicación Flex */
+/* Con flex podemos distribuir los elementos de la web, según las facilidades que nos aporta, tenemos diferentes estilos:
+1.- Flex-direction -> column (se almacenan en columna)
+1.1.- Flex-direction -> column-reverse (se almacenan en columna al revés)
+1.2.- Flex-direction -> row (valor predeterminado, se ordenan en fila)
+1.3.- Flex-direction -> row-reverse (se ordenan en fila alternados)
+
+2.- Flex-wrap -> nowrap (No envuelve nuestro contenido)
+2.1.- Flex-wrap -> wrap (Envuelve el contenido y lo posiciona en columna)
+2.2.- Flex-wrap -> wrap-reverse (Envuelve el contenido y lo posiciona en una columna invertida)
+
+3.- Flex-grow -> Posiciona los elementos estirando específicamente al que le damos el estilo, los valores van desde 0 hasta 2.
+
+4.- Flex-shrink -> Posiciona los elementos acortando especificamente al que damos el estilo, los valores van desde 0 hasta 2.
+
+5.- Flex-basis -> Posiciona los elementos con la medida exacta que nosotros le definamos, los valores van en px.
+
+6.- Flex-flow -> Es un estilo poco utilizado, nos permite posicionar horizontal y verticalmente los elementos.
+
+Tips ->
+1.- Justify-content: Posiciona los elementos sobre el eje horizontal.
+1.1.- Justify-content: center -> Posiciona mis elementos en el centro.
+1.2.- Justify-content: end -> Posiciona mis elementos al final del div. Hay más tipos...
+
+2.- Align-items: Posiciona los elementos sobre el eje vertical.
+2.1.- Align-items: stretch -> Posiciona mis elementos sobre el eje vertical, ocupando todo el height.
+2.2.- Align-items: center -> Posiciona mis elementos sobre el eje vertical, en el centro.
+*/
+
+/* Estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Esto es el estilo del header */
+header {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+header > nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+header > nav > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+header > nav > ul > li > a {
+  color: black;
+}
+
+.js {
+  width: 70px;
+  height: 50px;
+}
+
+.css {
+  display: none;
+  width: 70px;
+  height: 50px;
+}
+/* Esto es el estilo del main */
+main {
+  min-height: 80vh;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+div {
+  width: 240px;
+  height: 250px;
+  background-color: bisque;
+}
+
+/* Este es el estilo del footer */
+footer {
+  height: 10vh;
+  bottom: 0;
+  position: relative;
+}
+
+/* Esto son los estilos de la media query */
+@media (max-width: 750px) {
+  .js {
+    display: none;
+  }
+  .css {
+    display: block;
+  }
+}
