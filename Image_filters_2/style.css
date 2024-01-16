@@ -1,0 +1,117 @@
+/* Explicación image filters */
+/* 
+1.- Blur -> Modifica la imagen pixelándola. La unidad de medida es px.
+2.- Brightness -> Modifica el brillo de la imagen. La unidad de medida es en %.
+3.- Contrast -> Modifica la intensidad del color de la imagen. La unidad de medida en %.
+4.- Drop-shadow -> Genera una sombra de color, sobre la imagen. La unidad de medida es px.
+5.- Grayscale -> Modifica el color de la imagen, dejándola en blanco y negro. Cuanto menos %, mantiene el color, a más porcentaje, menos color tendrá. La unidad de medida es %.
+6.- Hue-rotate -> Modifica el color de la imagen según la escala de colores en 360deg. La unidad de medida es en deg.
+7.- Invert -> Modifica el aspecto general de la imagen. Del 0% al 50%, pierde luminosidad. Del 50% al 100% genera "rayos uv" sobre el color de la imagen. La unidad de medida es en %.
+8.- Opacity -> Modifica la luminosidad o la transparencia de la imagen. La unidad de medida es %.
+9 .- Saturate -> Modifica la intensida del color de la imagen. La unidad de medida es %.
+10.- Sepia -> Modifica la imagen adoptando un color amarillento. La unidad de medida es %.
+*/
+
+/* Estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Estilos para el header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  background-color: coral;
+}
+
+/* Estilos para el main */
+main {
+  margin-top: 20px;
+  min-height: 80vh;
+  margin-bottom: 20px;
+}
+
+main > section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+#original {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* Estilos específicos para cada imagen */
+#blur {
+  filter: blur(4px);
+}
+
+#brightness {
+  filter: brightness(150%);
+}
+
+#contrast {
+  filter: contrast(150%);
+}
+
+#shadow {
+  filter: drop-shadow(20px 20px 30px black);
+}
+
+#grayscale {
+  filter: grayscale(100%);
+}
+
+#hue-rotate {
+  filter: hue-rotate(200deg);
+}
+
+#invert {
+  filter: invert(100%);
+}
+
+#opacity {
+  filter: opacity(40%);
+}
+
+#saturate {
+  filter: saturate(180%);
+}
+
+#sepia {
+  filter: sepia(100%);
+}
+
+#hover {
+  filter: grayscale(100%);
+}
+
+#hover:hover {
+  filter: saturate(150%);
+}
+
+img {
+  width: 280px;
+}
+
+/* Estilos para el footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  position: relative;
+  background-color: coral;
+}
