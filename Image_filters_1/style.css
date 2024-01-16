@@ -1,0 +1,115 @@
+/* Explicación Image filters */
+/* 
+1.- Blur -> Difuminado de las imágenes. La unidad de medida sería en px. 
+2.- Brightness -> La modificación del brillo de la imagen.
+3.- Contrast -> La modificación de la intensidad del color de la imagen.
+4.- Drop-shadow -> Modificamos el sombreado de la imagen.
+5.- Grayscale -> Modificación de la imagen en un tono grisáceo. Elimina el color de la imagen.
+6.- Hue-rotate -> Es la escala de colores, define el color de la imagen. Varía desde 0deg hasta 360deg.
+7.- Invert -> Modifica los colores de la imagen. De 0% a 50% reduce el brillo, al 50% no se ve nada, del 50% al 100% modifica totalmente la imagen.
+8.- Opacity -> Modifica la opacidad de la imagen.
+9.- Saturate -> Modifica la saturación de la imagen. En valores bajos, se asemeja al grayscale y en valores altos al contrast.
+10.- Sepia -> Nos modifica la imagen, edita los colores hacia un tono amarillento.
+*/
+
+/* Estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Estilos del header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  background-color: bisque;
+}
+
+/* Estilos del main */
+main {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  min-height: 80vh;
+}
+
+main > section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.original {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 300px;
+}
+
+.blur {
+  filter: blur(2px);
+}
+
+.brightness {
+  filter: brightness(150%);
+}
+
+.contrast {
+  filter: contrast(150%);
+}
+
+.shadow {
+  filter: drop-shadow(30px 30px 50px black);
+}
+
+.grayscale {
+  filter: grayscale(100%);
+}
+
+.hue-rotate {
+  filter: hue-rotate(90deg);
+}
+
+.invert {
+  filter: invert(90%);
+}
+
+.opacity {
+  filter: opacity(40%);
+}
+
+.saturate {
+  filter: saturate(80%);
+}
+
+.sepia {
+  filter: sepia(100%);
+}
+
+.hover {
+  filter: grayscale(70%);
+}
+
+.hover:hover {
+  filter: contrast(150%);
+}
+
+/* Estilos del footer */
+footer {
+  height: 10vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+}
