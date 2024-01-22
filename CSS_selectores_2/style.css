@@ -1,0 +1,133 @@
+/* Explicación teórica selectores css */
+/* 
+1.- Selector genérico: Aplicamos estilos a etiquetas repetidas en nuestro código. 
+2.- Selector específico: Aplicamos estilos a la etiqueta específica en nuestro código.
+3.- Selector hermano adyacente: Aplicamos estilos a etiquetas que se encuentran pegadas, solo afecta a la segunda de ellas. Utilizamos el símbolo del +.
+4.- Selector hermano general: Aplicamos estilos a etiquetas que se repiten al principio y al final, solo afecta a la última de ellas. Utilizamos el símbolo ~
+5.- Selector universal: Aplicamos los estilos a todo nuestro código. Utilizamos el símbolo *
+6.- Selector buena práctica: Aplicamos estilos con el símbolo (>) para mejorar la práctica semántica de CSS.
+*/
+
+/* Explicación visual de los selectores */
+/* 1.- Selector genérico */
+h1 {
+  color: darkblue;
+}
+
+/* 2.- Selector específico */
+#titleFooter {
+  color: darkslategray;
+}
+
+/* 3.- Selector hermano adyacente */
+#containerMain > h3 + button {
+  font-size: 48px;
+  background-color: hotpink;
+}
+
+/* 4.- Selector hermano general */
+section > input ~ h4 {
+  font-size: 12.8px;
+}
+
+/* 5.- Selector universal */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* 6.- Selector buena práctica */
+/* 1.- Opción 1: El estilo se aplica correctamente añadiendo el > */
+section > input {
+  background-color: chocolate;
+}
+
+/* 2.- Opción 2: Estilo se aplica correctamente, pero NO es buena práctica. */
+section input {
+  background-color: chocolate;
+}
+
+/* Estilos para la landing */
+
+/* Selector universal */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Estilos para el header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  padding: 3.125rem;
+}
+
+header > nav > ul {
+  display: flex;
+  gap: 1.25rem;
+}
+
+header > nav > ul > li > a {
+  color: green;
+}
+
+header > nav > ul > li > a:hover {
+  color: aqua;
+}
+
+#logo {
+  width: 50px;
+}
+
+#js {
+  display: none;
+  width: 50px;
+}
+
+/* Estilos del main */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 80vh;
+  gap: 1.875rem;
+}
+
+main > div {
+  height: 30vh;
+  gap: 1.875rem;
+}
+
+/* Estilos del footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.125rem;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+footer > section > h4:hover {
+  color: green;
+}
+
+/* Estilos de la media query */
+@media (max-width: 700px) {
+  #logo {
+    display: none;
+  }
+  #js {
+    display: block;
+  }
+}

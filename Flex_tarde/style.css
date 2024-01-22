@@ -78,6 +78,10 @@ header > nav > ul > li > a:hover {
   display: none;
 }
 
+.button_style {
+  background-color: aqua;
+}
+
 /* Estilos del main */
 main {
   min-height: 80vh;
