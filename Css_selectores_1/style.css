@@ -1,0 +1,117 @@
+/* Explicación teórica selectores avanzados */
+/* 
+1.- Selector genérico: Aplicamos estilos a todas las etiquetas iguales de mi proyecto.
+2.- Selector específico: Aplicamos estilos a la etiqueta específica que nosotros asignemos clase o id.
+3.- Selector hermano adyacente: Aplicamos el estilo a una etiqueta que siempre va por detrás de la misma. Se utiliza el símbolo +.
+4.- Selector hermano general: Aplicamos estilos a etiquetas dentro del mismo contenedor, que no tienen que estar contiguas. Se utiliza el símbolo ~.
+5.- Selector universal: Aplicamos estilos a toda la página. Se utiliza con el *.
+6.- Selector buena práctica: Utilizamos el símbolo de mayor (>) para atacar correctamente a la etiqueta, haciendo una buena práctica de mi CSS.
+*/
+
+/* Ejemplo visual */
+
+/* 1.- Selector genérico */
+h4 {
+  font-size: 2rem;
+}
+
+/* 2.- Selector específico */
+/* Opción 1: */
+footer > h4 {
+  font-size: 1rem;
+}
+/* Opción 2: */
+.footerTitle {
+  font-size: 1rem;
+}
+
+/* 3.- Selector hermano adyacente */
+.containerAdyacente > h3 + button {
+  background-color: brown;
+}
+
+/* 4.- Selector hermano general */
+.containerDiv > input ~ input {
+  background-color: chartreuse;
+  outline: solid 2px blue;
+}
+
+/* 5.- Selector universal */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* 6.- Selector buena práctica */
+/* Opción 1, es la correcta */
+header > img {
+  width: 20px;
+}
+/* Opción 2, hace la misma función, NO es correcta */
+header img {
+  width: 20px;
+}
+
+/* Ejemplo de una buena práctica */
+
+/* Estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Estilos del header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 10vh;
+  background-color: bisque;
+}
+
+header > nav > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+header > nav > ul > li > a {
+  color: black;
+}
+
+header > nav > ul > li > a:hover {
+  color: red;
+}
+
+.css {
+  width: 100px;
+}
+
+/* Estilos para el main */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 80vh;
+}
+
+/* Estilos del footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  padding: 50px;
+}
