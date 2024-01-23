@@ -1,0 +1,40 @@
+<!-- Explicación de cada etiqueta -->
+
+<!-- Tipos de títulos -->
+<h1>Esto es un h1</h1>
+<h2>H2</h2>
+<h3>H3</h3>
+<h4>H4</h4>
+<h5>H5</h5>
+<h6>H6</h6>
+
+<!-- Tipos de input -->
+<input placeholder="Escribe tu apellido: " />
+<input type="datetime-local" />
+<input type="password" />
+<input type="range" />
+<input type="radio" />
+
+<img
+  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png"
+  alt="html"
+  width="100px"
+/>
+
+<button>Haz click 👍</button>
+
+<!-- Texto alternativo -->
+<p>
+  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod animi aut
+  facere ipsa eius impedit nihil, a modi quis fugit saepe aspernatur ad fuga
+  perspiciatis adipisci corporis quasi veritatis minima?
+</p>
+
+<!-- Ejemplo de select -->
+<select>
+  <option value="">-</option>
+  <option value="">Zapatillas</option>
+  <option value="">Pantalones</option>
+</select>
+
+<!-- Comentar código -> Control + K + C // Seleccionar varias palabras -> Control + D -->
