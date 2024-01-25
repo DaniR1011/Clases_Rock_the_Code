@@ -1,0 +1,132 @@
+/* Estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+/* Estilos del header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 10vh;
+}
+
+header > nav > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+header > nav > ul > li > a {
+  color: black;
+}
+
+header > nav > ul > li > a:hover {
+  color: green;
+}
+
+.info {
+  width: 200px;
+  height: 40px;
+  background-color: chartreuse;
+}
+
+.logo {
+  width: 200px;
+}
+
+.hamburguesa {
+  display: none;
+  width: 50px;
+}
+
+.telefono {
+  width: 40px;
+  display: none;
+}
+
+/* Estilos del main */
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 80vh;
+}
+
+main > section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+main > section > article > img {
+  width: 200px;
+}
+
+.firstArticle {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 50px;
+  width: 700px;
+}
+
+.secondArticle {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 130px;
+}
+
+/* Estilos del footer  */
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 10vh;
+  bottom: 0;
+  position: relative;
+}
+
+footer > nav > ul > li > a {
+  color: black;
+}
+
+/* Estilos para la media query */
+@media (max-width: 950px) {
+  .navHeader {
+    display: none;
+  }
+  .info {
+    display: none;
+  }
+  .telefono {
+    display: block;
+  }
+  .hamburguesa {
+    display: block;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 40vh;
+    gap: 30px;
+  }
+  main > section {
+    display: flex;
+    flex-direction: column;
+  }
+}
