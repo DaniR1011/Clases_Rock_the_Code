@@ -1,0 +1,125 @@
+/* Estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+/* Estilos del header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  height: 10vh;
+}
+
+header > nav > ul {
+  display: flex;
+  gap: 20px;
+}
+
+header > nav > ul > li > a {
+  color: black;
+}
+
+header > nav > ul > li > a:hover {
+  color: red;
+}
+
+header > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+img {
+  width: 30px;
+}
+
+.hamburguesa {
+  display: none;
+}
+
+.logo {
+  width: 150px;
+}
+
+/* Estilos del main */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  margin-top: 20px;
+  gap: 30px;
+}
+
+main > section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin-bottom: 50px;
+}
+
+main > section > article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.zapatilla {
+  width: 250px;
+}
+
+/* Estilos del footer */
+footer {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer > nav > ul > li > a {
+  color: black;
+}
+
+.flecha {
+  display: none;
+}
+
+/* Estilos para la media query */
+@media (max-width: 950px) {
+  .navHeader {
+    display: none;
+  }
+  .hamburguesa {
+    display: block;
+  }
+  .logo {
+    width: 80px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  .flecha {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+  }
+}
