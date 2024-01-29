@@ -1,0 +1,57 @@
+/* Estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Estilos para el header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+header > nav > ul {
+  display: flex;
+  gap: 60px;
+}
+
+/* Ocultamos por defecto el menú desplegable */
+header > nav > ul > li > ul > li {
+  display: none;
+}
+
+/* Mostramos el ul futbol - valencia */
+header > nav > ul > li:hover > ul > li {
+  display: block;
+}
+
+header > nav > ul > li > ul > li > ul > li {
+  display: block;
+}
+
+/* Ocultando valencia */
+header > nav > ul > li:hover > ul > li > ul > li {
+  display: none;
+}
+
+/* Mostramos valencia al hacer hover en futbol */
+header > nav > ul > li > ul > li:hover > ul > li {
+  display: block;
+}
+
+/* Estilos para el main */
+main {
+  min-height: 80vh;
+}
+
+/* Estilos para el footer */
+footer {
+  height: 10vh;
+  bottom: 0;
+  position: relative;
+}

@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Estilos para el header */
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+}
+
+header > nav > ul {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.logo {
+  width: 50px;
+}
+
+/* Ocultamos zapatillas */
+header > nav > ul > li > ul > li {
+  display: none;
+}
+
+/* Mostramos zapatillas al hacer hover */
+header > nav > ul > li:hover > ul > li {
+  display: block;
+}
+
+/* Ocultamos hamburguesa */
+.hamburguesa {
+  display: none;
+  width: 50px;
+}
+
+/* Ocultamos tercer nav */
+.thirdNav {
+  display: none;
+}
+
+header > div > ul {
+  display: none;
+}
+
+/* Estilos para el main */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+/* Estilos para el footer */
+footer {
+  height: 10vh;
+}
+
+/* Ocultamos hola */
+footer > nav > ul > li > ul > li {
+  display: none;
+}
+
+/* Mostramos hola */
+footer > nav > ul > li:hover > ul > li {
+  display: block;
+}
+
+.hamburguesa2 {
+  width: 60px;
+}
+
+/* Estilos para la media query */
+@media (max-width: 750px) {
+  .hamburguesa {
+    display: block;
+  }
+  .secondNav > ul > li {
+    display: none;
+  }
+}
