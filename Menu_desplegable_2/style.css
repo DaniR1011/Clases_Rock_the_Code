@@ -1,0 +1,114 @@
+/* Importamos fuente desde google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+
+/* Estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+/* Estilos para los anchor */
+a {
+  color: black;
+  font-family: 'Honk', system-ui;
+}
+
+/* Estilos del header */
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+}
+
+header > nav > ul {
+  display: flex;
+  gap: 60px;
+}
+
+/* Ocultamos HTML & CSS */
+header > nav > ul > li > ul > li {
+  display: none;
+}
+
+/* Mostramos con hover HTML & CSS */
+header > nav > ul > li:hover > ul > li {
+  display: block;
+}
+
+/* Ocultamos pseudoelementos */
+header > nav > ul > li > ul > li > ul > li {
+  display: none;
+}
+
+/* Mostramos con hover pseudoelementos */
+header > nav > ul > li > ul > li:hover > ul > li {
+  display: block;
+}
+
+.html {
+  width: 100px;
+}
+
+.ham {
+  width: 70px;
+}
+
+.thirdNav {
+  display: none;
+}
+
+/* Estilos para el main */
+main {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.menu {
+  width: 600px;
+}
+
+/* Estilos para el footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  position: relative;
+  bottom: 0;
+}
+
+/* Ocultamos el clicka */
+.click {
+  display: none;
+}
+
+/* Mostramos el clicka al hacer hover */
+.hover:hover > ul > .click {
+  display: block;
+}
+
+.flecha {
+  width: 30px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 30px;
+}
+
+/* Estilos para la media query */
+@media (max-width: 750px) {
+  .secondNav {
+    display: none;
+  }
+  .thirdNav {
+    display: block;
+  }
+}
