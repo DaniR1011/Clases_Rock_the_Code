@@ -73,12 +73,13 @@ footer > nav > ul > li:hover > ul > li {
 }
 
 .hamburguesa2 {
+  display: none;
   width: 60px;
 }
 
 /* Estilos para la media query */
 @media (max-width: 750px) {
-  .hamburguesa {
+  .hamburguesa2 {
     display: block;
   }
   .secondNav > ul > li {
