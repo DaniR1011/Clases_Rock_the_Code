@@ -1,0 +1,143 @@
+/* Explicación pseudoclases y pseudoelementos */
+
+/* Pseudoclases
+Se utilizan en css con :   
+
+Tipos ->
+1.- Hover: Modifica el estilo de la etiqueta cuando paso el cursor por encima.
+2.- Focus: A través del teclado modifico las etiquetas que contengan focus.
+3.- First-child: Modifica los estilos al primer hijo.
+4.- Last-child: Modifica los estilos al último hijo.
+*/
+
+/* Pseudoelementos
+Se utilizan en css con :: 
+
+Tipos:
+1.- After: Modifica la etiqueta al final de su contenido.
+2.- Before: Modifica la etiqueta al principio del contenido.
+3.- Selection: Modifica el estilo del texto que seleccionemos.
+4.- First-line: Modifica la primera línea de la etiqueta.
+5.- First-letter: Modifica la primera letra de la etiqueta.
+*/
+
+/* Estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Estilos del header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+header > nav {
+  display: flex;
+  gap: 50px;
+}
+
+header > nav > ul {
+  display: flex;
+  gap: 50px;
+}
+
+a:hover {
+  color: red;
+}
+
+a:focus {
+  color: black;
+}
+
+.input:focus {
+  color: red;
+}
+
+/* Estilos del main */
+.pseudo {
+  width: 600px;
+}
+
+h1::first-letter {
+  color: gray;
+}
+
+h4::after {
+  content: ' thepower';
+  color: green;
+  text-transform: uppercase;
+}
+
+h4::before {
+  content: '🚀 ';
+}
+
+div > p::after {
+  content: ' adj';
+  font-weight: 700;
+}
+
+.cruz::after {
+  content: ' ✝️';
+}
+
+h3::after {
+  content: ' 🧺';
+}
+
+p::first-line {
+  color: green;
+}
+
+/* Estilos para el footer */
+footer > section {
+  height: 10vh;
+  bottom: 0;
+  position: relative;
+}
+
+#yingyang:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 25%;
+  background: bisque;
+  border: 30% solid bisque;
+  border-radius: 50%;
+  width: 50%;
+  height: 50%;
+}
+
+#yingyang:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  background: teal;
+  border: 30% solid teal;
+  border-radius: 50%;
+  width: 50%;
+  height: 50%;
+}
+
+#yingyang {
+  /* border: 2px solid bisque; */
+  display: flex;
+  width: 100px;
+  min-width: 5%;
+  height: 100px;
+  border-radius: 50%;
+  /* margin-left: 20px; */
+  /* margin-top: 400px; */
+  top: 100px;
+  position: relative;
+  background: linear-gradient(to left, bisque 50%, teal 50%);
+  transition: transform 0.3s ease-in-out;
+}
