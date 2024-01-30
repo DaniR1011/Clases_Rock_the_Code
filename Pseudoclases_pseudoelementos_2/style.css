@@ -1,0 +1,128 @@
+/* Explicación pseudoclases y pseudoelementos */
+
+/* Pseudoclases: Se utilizan en el css : 
+
+Tipos:
+1.- Active: Modifica el estilo de la etiqueta cuando hacemos click encima de ella.
+
+2.- Hover: Modifica el estilo de la etiqueta cuando pasamos el rato por encima de ella.
+
+3.- Focus: Modifica el estilo de la etiqueta cuando usamos los atajos del teclado.
+*/
+
+/* Pseudoelementos: Se utilizan en el css :: 
+
+Tipos:
+1.- After: Modifica los estilos al final de la etiqueta seleccionada.
+
+2.- Before: Modifica los estilos al principio de la etiqueta seleccionada.
+
+3.- First-letter: Modifica el estilo de la primera letra de la etiqueta.
+
+4.- First-line: Modifica la primera linea de la etiqueta.
+*/
+
+/* Cambio de fuente */
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+
+/* Reseteo de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  background-color: bisque;
+  /* font-family: 'Honk', system-ui; */
+}
+
+/* Estilos para el header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+header > nav {
+  display: flex;
+  gap: 20px;
+}
+
+header > nav > ul {
+  display: flex;
+  gap: 20px;
+}
+
+header > nav > ul > li > a {
+  color: black;
+}
+
+a:focus {
+  background-color: aquamarine;
+  color: brown;
+}
+
+input {
+  width: 160px;
+}
+
+input:focus {
+  color: red;
+}
+
+input:active {
+  color: brown;
+}
+
+a:hover {
+  border: 1px solid darkorchid;
+}
+
+/* Estilos para el main */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 80vh;
+  gap: 50px;
+}
+
+main > section > article > p::after {
+  content: ' TP';
+  font-weight: 700;
+  font-size: 0.6rem;
+}
+
+main > section > article > p::first-letter {
+  font-family: 'Honk', system-ui;
+  font-size: 1.8rem;
+}
+
+main > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  gap: 30px;
+}
+
+main > div > p::before {
+  content: '1.- ';
+  font-weight: 800;
+}
+
+main > div > p::first-line {
+  text-decoration: underline;
+}
+
+/* Estilos para el footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  bottom: 0;
+  position: relative;
+}
