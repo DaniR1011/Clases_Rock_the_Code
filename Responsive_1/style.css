@@ -1,0 +1,135 @@
+/* Estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Estilos globales anchor */
+a {
+  color: black;
+}
+
+/* Estilos globales botones */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilos para el header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: bisque;
+  height: 10vh;
+  padding: 0px 40px;
+}
+
+header > nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+header > nav > ul {
+  display: flex;
+  gap: 30px;
+}
+
+header > nav > ul > li > a:hover {
+  text-decoration: underline;
+}
+
+header > div {
+  display: flex;
+  justify-content: space-around;
+  width: 130px;
+}
+
+header > div > img {
+  width: 30px;
+}
+
+.logo {
+  width: 150px;
+}
+
+.ham {
+  display: none;
+}
+
+/* Estilos para el main */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+/* Estilos para el footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: bisque;
+  height: 30vh;
+}
+
+.firstDiv {
+  display: flex;
+  justify-content: space-around;
+  width: 700px;
+}
+
+.secondDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+.secondDiv > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 150px;
+}
+
+.spain::before {
+  content: '🇪🇸';
+}
+
+/* Estilos para la media query */
+@media (max-width: 800px) {
+  header > nav > ul {
+    display: none;
+  }
+  .logo {
+    width: 120px;
+  }
+  .usuario {
+    display: none;
+  }
+  .ham {
+    display: block;
+  }
+  footer {
+    height: 50vh;
+    gap: 20px;
+  }
+
+  .firstDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
